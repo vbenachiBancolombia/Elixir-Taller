@@ -7,5 +7,5 @@ services:
     stdin_open: true # keep stdin open even if not attached
     tty: true # allocate a pseudo-TTY
     volumes:
-      - .C:\e
-    command: bash
+      - ./program:/home/program
+    command: elixir -e "Main.run()"
